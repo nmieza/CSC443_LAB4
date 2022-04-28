@@ -12,13 +12,14 @@
     {
 
     echo "<p> Thank you, <b>". 
-    $_POST["name"];
+    $_POST["name"]
     "</b> for the following comments: <br/>".
-    $_POST["comments"];
+    $_POST["comments"]
     "<p>We will reply to you at <i>".
-    $_POST["email"];
+    $_POST["email"]
     "</i></p>";
-    } ?>
+    }
+    ?>
 
 </body>
 </html>
