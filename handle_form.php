@@ -8,7 +8,8 @@
 </head>
 <body>
     
-    <?php #Script handle form
+    <?php #Script handle form 
+    {
 
     echo "<p> Thank you, <b>". 
     $_POST["name"];
@@ -16,7 +17,7 @@
     $_POST["comments"];
     "<p>We will reply to you at <i>".
     $_POST["email"];
-    "</i></p>". ?>
+    "</i></p>".} ?>
 
 </body>
 </html>
