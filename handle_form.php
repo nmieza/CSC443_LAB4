@@ -8,8 +8,8 @@
 </head>
 <body>
 <?php #Script handle form 
-if(isset($_POST['name']) >0) {
-    $name = $_POST['name'];
+if(isset($_POST["name"]) >0) {
+    $name = $_POST["name"];
 }
 else{
     $name = null;
