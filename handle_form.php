@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php #Script handle form 
-if(strlen($_POST["name"]) >0) {
+if(!strlen($_POST["name"]) >0) {
     $_POST ["name"] = $_POST["name"];
 }
 else{
@@ -16,7 +16,8 @@ else{
 
     echo '<p><b> You Forgot to Enter Your Name! </b></p>'; 
 }
-if(strlen($_POST["comments"]) >0) {
+
+if(!strlen($_POST["comments"]) >0) {
     $_POST["comments"] = $_POST["comments"];
 }
 else {
