@@ -17,15 +17,15 @@ else{
     echo '<p><b> You Forgot to Enter Your Name! </b></p>'; 
 }
 
-if(isset($_POST['comments']) >0) {
-    $comments = $_POST['comments'];
+if(isset($_POST["comments"]) >0) {
+    $comments = $_POST["comments"];
 }
 else {
     $comments= null;
 
     echo '<p><b> You Forgot to Enter Your Comments! </b></p>';
 }
-if(isset($_POST['email']) >0){
+if(isset($_POST["email"]) >0){
     $email= null;
 
     echo '<p><b> You Forgot to Enter Your Emails! </b></p>';
@@ -43,9 +43,9 @@ if(isset($_POST["gender"])){
     echo '<p><b> You Forgot to Choose Your Gender! </b></p>';
 }
 
-if ($_POST['name'] && $_POST['comments'] && $_POST['email'] && $_POST['gender']) {
-    echo "Thank you," .$_POST['name']. " for the following comments: <br/> <tt>" .
-    $_POST['comments']. " </tt> <p> We will reply to you at <i>" . $_POST['email'].
+if ($_POST["name"] && $_POST["comments"] && $_POST["email"] && $_POST["gender"]) {
+    echo "Thank you," .$_POST["name"]. " for the following comments: <br/> <tt>" .
+    $_POST["comments"]. " </tt> <p> We will reply to you at <i>" . $_POST["email"].
     "</i></p>";
     echo $message;
 }
