@@ -17,11 +17,11 @@ else{
     echo '<p><b> You Forgot to Enter Your Name! </b></p>'; 
 }
 
-if(strlen($_POST["comments"]) >0) {
-    $_POST["comments"] = $_POST["comments"];
+if(isset($_POST['comments']) >0) {
+    $comments = $_POST['comments'];
 }
 else {
-    $_POST["comments"]= null;
+    $comments= null;
 
     echo '<p><b> You Forgot to Enter Your Comments! </b></p>';
 }
