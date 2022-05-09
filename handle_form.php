@@ -25,8 +25,8 @@ else {
 
     echo '<p><b> You Forgot to Enter Your Comments! </b></p>';
 }
-if(isset($_POST["email"]) >0){
-    $_POST["email"]= null;
+if(isset($_POST['email']) >0){
+    $email= null;
 
     echo '<p><b> You Forgot to Enter Your Emails! </b></p>';
 }
