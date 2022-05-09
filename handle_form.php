@@ -8,11 +8,11 @@
 </head>
 <body>
 <?php #Script handle form 
-if(strlen($_POST["name"]) >0) {
-    $name = $_POST["name"];
+if(isset($_POST['name']) >0) {
+    $name = $_POST['name'];
 }
 else{
-    $_POST["name"]= null;
+    $name = null;
 
     echo '<p><b> You Forgot to Enter Your Name! </b></p>'; 
 }
