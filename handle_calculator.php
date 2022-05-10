@@ -10,7 +10,7 @@
     <?php #script handle calculator
     
     if(isset($source)){
-        if)$source == 'calculator.html'){
+        if($source == 'calculator.html'){
             if((is_numeric($quantity))){
                 $total = ($quantity * $price) * ($taxrate +1);
                 $total = number_format ($total,2);
